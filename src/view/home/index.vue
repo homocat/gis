@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="app">
-    <RouterView/>
+  <div class="home">
+    <h2>home组件</h2>
   </div>
 </template>
 
