@@ -4,9 +4,6 @@
 
 <template>
   <div class="app">
-    <div class="ui">
-      <!-- nav -->
-    </div>
     <div class="cesium">
       <router-view class="router" />
     </div>
