@@ -4,7 +4,7 @@
 
 <template>
   <div class="demos">
-    <h2>demos组件</h2>
+    <router-view/>
   </div>
 </template>
 

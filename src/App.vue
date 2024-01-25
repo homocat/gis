@@ -4,8 +4,18 @@
 
 <template>
   <div class="app">
-    <RouterView/>
+    <RouterView class="router"/>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.router {
+  width: 100%;
+  height: 100%;
+}
+</style>
