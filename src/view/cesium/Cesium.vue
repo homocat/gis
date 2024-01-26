@@ -12,8 +12,37 @@ import VerticalBar from '../../components/VerticalBar.vue';
 import WordCloud from '../../components/WordCloud.vue';
 import { addCameraController } from '../../util/cameraController'
 
-onMounted(() => {
+onMounted(async () => {
   const viewer = initViewer()
+
+  const osmImageryProvider = new Cesium.WebMapTileServiceImageryProvider({
+
+    url: '/geoserver/gwc/rest/wmts/ditu:w(6)/{style}/{TileMatrixSet}/{TileMatrixSet}:{TileMatrix}/{TileRow}/{TileCol}?format=image/png',
+
+    layer: 'ditu:w(6)',
+
+    format: 'image/png',
+
+    style: 'raster',
+
+    maximumLevel: 40,
+
+    tileMatrixSetID: 'EPSG:900913'
+
+  })
+  viewer.imageryLayers.addImageryProvider(osmImageryProvider)
+
+
+
+  // const cesiumTerrainProvider = await Cesium.CesiumTerrainProvider.fromUrl(
+  //   '/terrain',
+  //   {
+  //     requestWaterMask: true, // 请求水体遮罩数据（可选）
+  //     requestVertexNormals: true // 请求顶点法线用于光照效果（可选）
+  //   }
+  // )
+  // viewer.scene.terrainProvider = cesiumTerrainProvider
+
   let positionCartesian = new Cesium.Cartesian3(1332761, -4662399, 4137888)
   viewer.scene.camera.setView({
     destination: positionCartesian,
