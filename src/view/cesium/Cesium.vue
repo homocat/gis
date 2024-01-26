@@ -10,6 +10,7 @@ import RingBar from '../../components/RingBar.vue';
 import TotalData from '../../components/TotalData.vue';
 import VerticalBar from '../../components/VerticalBar.vue';
 import WordCloud from '../../components/WordCloud.vue';
+import { addCameraController } from '../../util/cameraController'
 
 onMounted(() => {
   const viewer = initViewer()
@@ -21,6 +22,7 @@ onMounted(() => {
       pitch: -0.66
     }
   });
+  addCameraController(viewer, 0.5, 200)
 })
 </script>
 
