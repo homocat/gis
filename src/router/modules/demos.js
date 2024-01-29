@@ -12,6 +12,11 @@ export default {
       path: "/demos/base",
       name: "基础布局",
       component: () => import("@/view/demos/BaseLayout.vue")
+    },
+    {
+      path: "/demos/filter",
+      name: "表单过滤",
+      component: () => import("@/view/demos/Filter.vue")
     }
   ]
 }
