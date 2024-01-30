@@ -17,7 +17,8 @@ const routes = [
     ...routerList,
     {
         path: "/",
-        component: () => import("@/view/home/index.vue")
+        component: () => import("@/view/home/index.vue"),
+        redirect: "/native"
     }
 ]
 
