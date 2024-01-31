@@ -13,9 +13,7 @@ Cesium.Ion.defaultAccessToken = cesiumConfig.IonDefaultAccessToken
  * @returns {Cesium.Viewer} viewer
  */
 export function initViewer(id = "cesiumContainer") {
-  const viewer = new Cesium.Viewer(id, {
+  return new Cesium.Viewer(id, {
     infoBox: false,
   })
-
-  return viewer
 }
