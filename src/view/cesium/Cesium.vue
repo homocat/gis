@@ -58,14 +58,14 @@ onMounted(async () => {
 <template>
   <div class="flex w-screen overflow-hidden h-screen relative -z-10">
     <!-- left -->
-    <div class="flex-1 flex-col m-5 absolute z-10 bg-opacity-50 bg-slate-800 h-[95%] w-[300px]">
-      <!-- 横向柱状图 -->
-      <HorizontalBar class=" h-1/3 box-border p-3" />
-      <!-- 雷达图 -->
-      <RadarBar class=" h-1/3 box-border pb-4" />
-      <!-- 关系图 -->
-      <Relation class=" h-1/3" />
-    </div>
+<!--    <div class="flex-1 flex-col m-5 absolute z-10 bg-opacity-50 bg-slate-800 h-[95%] w-[300px]">-->
+<!--      &lt;!&ndash; 横向柱状图 &ndash;&gt;-->
+<!--      <HorizontalBar class=" h-1/3 box-border p-3" />-->
+<!--      &lt;!&ndash; 雷达图 &ndash;&gt;-->
+<!--      <RadarBar class=" h-1/3 box-border pb-4" />-->
+<!--      &lt;!&ndash; 关系图 &ndash;&gt;-->
+<!--      <Relation class=" h-1/3" />-->
+<!--    </div>-->
     <!-- cesium -->
     <div id="cesiumContainer" class=" absolute z-0"></div>
     <!-- right -->

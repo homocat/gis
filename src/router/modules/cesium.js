@@ -3,8 +3,13 @@ export default {
   component: () => import("@/view/cesium/index.vue"),
   children: [
     {
+      path: "/cesium/draw",
+      name: "绘制图形",
+      component: () => import("@/view/cesium/Draw.vue")
+    },
+    {
       path: "/cesium",
-      name: "cesium 键盘移动",
+      name: "camera 控制器",
       component: () => import("@/view/cesium/Cesium.vue")
     },
     {
