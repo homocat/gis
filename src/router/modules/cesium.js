@@ -16,6 +16,11 @@ export default {
       path: "/cesium/3dtiles",
       name: "3d 模型",
       component: () => import("@/view/cesium/3DTiles.vue")
-    }
+    },
+    {
+      path: "/cesium/widget",
+      name: "widget",
+      component: () => import("@/view/cesium/Widget.vue")
+    },
   ]
 }
