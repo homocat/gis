@@ -1,4 +1,5 @@
 import router from "../router";
+import DataVVue3Plugin from "@kjgl77/datav-vue3";
 
 
 /**
@@ -11,4 +12,5 @@ import router from "../router";
 export function registerPlugin(app) {
   app
     .use(router)
+    .use(DataVVue3Plugin)
 }

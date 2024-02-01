@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@kjgl77/datav-vue3": "^1.7.2",
     "cesium": "^1.113.0",
     "echarts": "^5.4.3",
     "vite-plugin-cesium": "^1.2.22",
