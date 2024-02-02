@@ -15,7 +15,15 @@ const routes = [
   ...routerList,
   {
     path: "/",
+    redirect: "/home2"
+  },
+  {
+    path: "/home",
     component: () => import("@/view/home/index.vue")
+  },
+  {
+    path: "/home2",
+    component: () => import("@/view/home2/index.vue")
   }
 ]
 

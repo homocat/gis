@@ -34,6 +34,7 @@ onMounted(() => {
 </script>
 
 <template>
+<!--  <dv-border-box-12> </dv-border-box-12>-->
   <div id="horizontal"></div>
 </template>
 

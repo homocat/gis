@@ -1,8 +1,11 @@
 <script setup>
+
 </script>
 
 <template>
-  <router-view/>
+  <div class="header">
+    <h2>header组件</h2>
+  </div>
 </template>
 
 <style scoped></style>
