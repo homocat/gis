@@ -12,6 +12,7 @@
     "@kjgl77/datav-vue3": "^1.7.2",
     "cesium": "^1.113.0",
     "echarts": "^5.4.3",
+    "element-plus": "^2.5.4",
     "vite-plugin-cesium": "^1.2.22",
     "vue": "^3.3.11",
     "vue-router": "^4.2.5"

@@ -12,18 +12,19 @@ routerList.push(
 
 
 const routes = [
-  ...routerList,
   {
     path: "/",
     redirect: "/home2"
   },
   {
     path: "/home",
-    component: () => import("@/view/home/index.vue")
+    component: () => import("@/view/home/index.vue"),
+    children: routerList
   },
   {
     path: "/home2",
-    component: () => import("@/view/home2/index.vue")
+    component: () => import("@/view/home2/index.vue"),
+    children: routerList
   }
 ]
 

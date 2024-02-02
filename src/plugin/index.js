@@ -1,6 +1,7 @@
 import router from "../router";
 import DataVVue3Plugin from "@kjgl77/datav-vue3";
-
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
 /**
  * 注册中间件
@@ -10,7 +11,8 @@ import DataVVue3Plugin from "@kjgl77/datav-vue3";
  * @param {vue root} app
  */
 export function registerPlugin(app) {
-  app
-    .use(router)
-    .use(DataVVue3Plugin)
+    app
+        .use(router)
+        .use(DataVVue3Plugin)
+        .use(ElementPlus)
 }
