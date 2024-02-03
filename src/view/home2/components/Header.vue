@@ -1,19 +1,25 @@
 <script setup>
+import getNavList from "@/router/util.js";
 
+const navList = getNavList()
 </script>
 
 <template>
   <div class="flex w-screen">
     <div class="flex flex-1 w-1/3 flex-row flex-wrap">
       <dv-decoration-10 style="height: 5px; width: 100%;"></dv-decoration-10>
-      <div class="flex flex-row justify-center w-1/4 h-[90%] items-center" v-for="i in 4">
+      <div class="flex flex-row justify-center w-1/4 h-[90%] items-center" v-for="(nav, index) in navList" :key="index">
         <el-dropdown trigger="click" class="flex items-center justify-center bg-red-600 w-2/3">
         <span class="text-sm box-border text-blue-500 w-auto bg-red-600 h-auto">
-          demos
+          {{ nav.name }}
         </span>
           <template #dropdown>
             <el-dropdown-menu>
-              <el-dropdown-item>Action 1</el-dropdown-item>
+              <el-dropdown-item v-for="(item, idx) in nav.children" :key="idx">
+                <router-link :to="item.path">
+                  {{ item.name }}
+                </router-link>
+              </el-dropdown-item>
             </el-dropdown-menu>
           </template>
         </el-dropdown>

@@ -107,8 +107,8 @@ onMounted(() => {
 
 <template>
   <div class="flex w-screen overflow-hidden h-screen relative -z-10">
-    <div id="viewer" class="h-screen"></div>
-    <div class="flex items-end m-5 absolute right-0 z-10 h-[95%] w-[300px]">
+    <div id="viewer" class="w-screen h-screen"></div>
+    <div class="flex items-end m-5 absolute right-0 top-[10%] z-10 h-auto w-[300px]">
       <dv-border-box-10>
         <div class="h-[100%] justify-start rounded-xl flex flex-1 flex-col p-10 ">
           <button @click="() => viewFerryBuilding(3)" class="btn bg-amber-300 m-1">viewFerryBuilding</button>
