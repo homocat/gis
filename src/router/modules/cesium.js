@@ -1,5 +1,6 @@
 export default {
   path: "/cesium",
+  name: "cesium",
   component: () => import("@/view/cesium/index.vue"),
   children: [
     {
